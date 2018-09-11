@@ -3,11 +3,11 @@ class Team
 attr_reader :team_name, :players, :coach
 attr_writer :team_name, :players, :coach
 
-  def initialize(team_name, players, coach, points)
+  def initialize(team_name, players, coach,)
     @team_name = team_name
     @players = players
     @coach = coach
-    @points = points
+    @points = 0
   end
 
 def add_new_player(player)
@@ -22,7 +22,7 @@ def add_points(result)
   if result == "win"
     @points += 3
   end
-  return @points 
+  return @points
 end
 
 #   def get_team_name

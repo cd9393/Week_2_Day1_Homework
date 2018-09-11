@@ -5,7 +5,7 @@ require_relative("../part_b")
 class TestTeam < Minitest::Test
 
   def setup
-    @team = Team.new("Wildcats", ["John", "Jeff", "George", "Geoffrey"], "Coach Bob", 0)
+    @team = Team.new("Wildcats", ["John", "Jeff", "George", "Geoffrey"], "Coach Bob")
   end
 
   def test_get_team_name
