@@ -44,6 +44,7 @@ class TestLibrary < Minitest::Test
     result = @library.get_book_info("harry_potter")
     assert_equal(expected , result)
   end
+  # an easier way of creating the expected =  is to use expected = book_titles[1] to return the harry potter info
 
   def test_get_rental_details
     expected = {
